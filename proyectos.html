@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Profesional</title>
+        <link rel="stylesheet" href="loader.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="proyectos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <h1>Portfolio<span class="accent">.</span></h1>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html" class="active">Proyectos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="proyectos">
+            <div class="background-decoration"></div>
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2>Proyectos Destacados</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto1.jfif" alt="Proyecto 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Evasor de obstáculos</h3>
+                        <p>Un robot evador de obstáculos es un dispositivo autónomo que detecta y evita colisiones mediante sensores, ajustando su movimiento para navegar eficazmente.</p>
+                        <div class="project-links">
+                            <button class="btn btn-demo" data-project="1">Ver Demo</button>
+                            
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto2.jfif" alt="Proyecto 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Robot manejable</h3>
+                        <p>Un robot manejable con una aplicación móvil es un dispositivo controlado a distancia mediante una app, que permite dirigir sus movimientos y acciones en tiempo real.</p>
+                        <div class="project-links">
+                            <button class="btn btn-demo" data-project="2">Ver Demo</button>
+                            
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="proyecto3.jfif" alt="Proyecto 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>Proyecto 3</h3>
+                        <p>Un robot seguidor de línea es un dispositivo autónomo que sigue un camino definido, generalmente marcado con una línea de color contrastante, usando sensores ópticos.</p>
+                        <div class="project-links">
+                            <button class="btn btn-demo" data-project="3">Ver Demo</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Portfolio<span class="accent">.</span></h3>
+                <p>Diseñando el futuro digital</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Portfolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="loader.js"></script>
+
+    <!-- Modales para cada proyecto -->
+    <div class="modal" id="modal-1">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Evasor de obstáculos</h2>
+                <div class="tech-stack">
+                    <span class="tech">Arduino</span>
+                    <span class="tech">C++</span>
+                    <span class="tech">Sensores</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="project-gallery">
+                    <img src="proyecto1.jfif" alt="Evasor - Vista 1" class="gallery-img active">
+                    <img src="proyecto1-2.jfif" alt="Evasor - Vista 2" class="gallery-img">
+                    <img src="proyecto1-3.jfif" alt="Evasor - Vista 3" class="gallery-img">
+                    <div class="gallery-nav">
+                        <button class="gallery-btn prev">&lt;</button>
+                        <button class="gallery-btn next">&gt;</button>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <h3>Descripción Detallada</h3>
+                    <p>El robot evasor de obstáculos es un proyecto de robótica autónoma que utiliza sensores ultrasónicos para detectar y evitar obstáculos en su camino. El robot es capaz de navegar de forma independiente en entornos dinámicos.</p>
+                    
+                    <h3>Características Principales</h3>
+                    <ul>
+                        <li>Detección de obstáculos en tiempo real</li>
+                        <li>Navegación autónoma</li>
+                        <li>Sistema de control adaptativo</li>
+                    </ul>
+                    
+                    <h3>Tecnologías Utilizadas</h3>
+                    <p>Arduino UNO, sensores ultrasónicos HC-SR04, motores DC, programación en C++, y diseño de PCB personalizado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-2">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Robot Manejable</h2>
+                <div class="tech-stack">
+                    <span class="tech">Arduino</span>
+                    <span class="tech">Bluetooth</span>
+                    <span class="tech">Android</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="project-gallery">
+                    <img src="proyecto2.jfif" alt="Robot Manejable - Vista 1" class="gallery-img active">
+                    <img src="proyecto2-1.jfif" alt="Robot Manejable - Vista 2" class="gallery-img">
+                    <img src="proyecto2-2.jfif" alt="Robot Manejable - Vista 3" class="gallery-img">
+                    <div class="gallery-nav">
+                        <button class="gallery-btn prev">&lt;</button>
+                        <button class="gallery-btn next">&gt;</button>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <h3>Descripción Detallada</h3>
+                    <p>Robot controlado mediante una aplicación móvil que permite el control remoto en tiempo real. La comunicación se realiza mediante Bluetooth, permitiendo un control preciso de los movimientos.</p>
+                    
+                    <h3>Características Principales</h3>
+                    <ul>
+                        <li>Control mediante aplicación móvil</li>
+                        <li>Conexión Bluetooth</li>
+                        <li>Respuesta en tiempo real</li>
+                    </ul>
+                    
+                    <h3>Tecnologías Utilizadas</h3>
+                    <p>Arduino, módulo Bluetooth HC-05, Android Studio para la app móvil, motores DC con puente H.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-3">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Seguidor de Línea</h2>
+                <div class="tech-stack">
+                    <span class="tech">Arduino</span>
+                    <span class="tech">Sensores IR</span>
+                    <span class="tech">PID</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="project-gallery">
+                    <img src="proyecto3.jfif" alt="Seguidor - Vista 1" class="gallery-img active">
+                    <div class="gallery-nav">
+                        <button class="gallery-btn prev">&lt;</button>
+                        <button class="gallery-btn next">&gt;</button>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <h3>Descripción Detallada</h3>
+                    <p>Robot seguidor de línea que utiliza sensores infrarrojos para detectar y seguir una línea negra sobre fondo blanco. Implementa un control PID para un seguimiento suave y preciso.</p>
+                    
+                    <h3>Características Principales</h3>
+                    <ul>
+                        <li>Control PID para seguimiento preciso</li>
+                        <li>Array de sensores IR</li>
+                        <li>Velocidad ajustable</li>
+                    </ul>
+                    
+                    <h3>Tecnologías Utilizadas</h3>
+                    <p>Arduino, sensores IR QTR-8A, algoritmo PID, motores DC con encoders.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="modal.js"></script>
+</body>
+</html> 
